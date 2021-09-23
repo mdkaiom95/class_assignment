@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing_table{
+    background-color: #F6F9FC;
+    padding-bottom: 50px;
+}
+
+.pricing_table_head{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.pricing_table_head h4{
+    color: #0D6EFD;
+    font-size: 16px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.pricing_table_head h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.pricing_table_head h2::after{
+    content: "";
+    background: #0D6EFD;
+    top: 55px;
+    left: 650px;
+    width: 4%;
+    height: 3px;
+    position: absolute;
+
+}
+.pricing_table_head p{
+    color: #9595A7;
+    font-size: 14px;
+    line-height: 22px;
+    width: 460px;
+    margin: auto;
+    font-weight: 700;
+}
+
+
+.pricing_table_items{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+    
+}
+.table_item_one{
+    text-align: center;
+    flex-basis: 32%;
+    padding-bottom: 30px;
+    background-color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.table_item_one:hover{
+    background-color: #2F65ED;
+    color: white;
+}
+.table_item_one:hover h4{
+    color: white;
+    animation: bgcolr .8s ease-in-out 1;
+}
+.table_item_one:hover h1{
+    color: white;
+    animation: bgcolr .8s ease-in-out 1;
+}
+
+@keyframes bgcolr{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #9595A7;
+    }
+    100%{
+        color: white;
+    }
+}
+
+.table_item_one:hover ul li{
+    color: white;
+}
+.table_item_one:hover button{
+    background-color: #fff;
+    color: #2F65ED;
+}
+.table_item_one h4{
+    font-size: 18px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    color: #374351;
+}
+.table_item_one ul{
+    position: relative;
+    transition: 0.3s;
+}
+.table_item_one ul::after{
+    content: "";
+    background: #d4d3d3;
+    top: -30px;
+    left: 70px;
+    width: 60%;
+    height: 1px;
+    position: absolute;
+
+}
+.table_item_one h1{
+    margin-bottom: 80px;
+    font-size: 40px;
+    color: #374351;
+    transition: 0.3s;
+}
+
+.table_item_one ul{
+    list-style: none;
+}
+.table_item_one ul li{
+    color: #9595A7;
+    line-height: 35px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.table_item_one button{
+    margin-top: 30px;
+    padding: 14px 30px;
+    border-radius: 45px;
+    color: white;
+    background: #0D6EFD;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+.table_item_one button:hover{
+    color: white;
+}
+
+.table_item_one button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 45px;
+    background: #0D6EFD;
+    transition: 0.6s;
+    z-index: -2;
+    opacity: 0;
+    visibility: hidden;
+}
+.table_item_one button:hover::after{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* purchase_now Section */
+.purchase_now{
+    background: url(https://i.postimg.cc/MTStbFVH/free-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+.purchase_now::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(36, 22, 223, 0.747);
+    z-index: -1;
+}
+.purchase_now_content{
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+.purchase_now_content h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.purchase_now_content h1{
+    font-size: 28px;
+    position: relative;
+}
+.purchase_now_content h1::after{
+    content: "";
+    background: #fff;
+    top: 80px;
+    left: 195px;
+    width: 10%;
+    height: 2px;
+    position: absolute;
+}
+.purchase_now_content p{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50x;
+    margin-top: 30px;
+}
+.purchase_now_content button{
+    margin-top: 50px;
+    padding: 16px 30px;
+    border-radius: 45px;
+    color: #0D6EFD;
+    background: #fff;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    z-index: 4;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.purchase_now_content button:hover{
+    color: white !important;
+    background: #0D6EFD;
+    
+}
+.purchase_now_content button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 45px;
+    background: #0D6EFD;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -4;
+}
+.purchase_now_content button:hover::before{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+/* News Letter  Section */
+.news_letter_sec{
+    background: #F8F9FA;
+}
+.news_letter_content{
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.leftside{
+    flex-basis: 59%;
+    background: #3763EB;
+    color: white;
+    padding: 40px;
+}
+.leftside h2{
+    font-size: 24px;
+}
+.leftside p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.leftside input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 45px;
+    font-size: 16px;
+    border: none;
+}
+.leftside button{
+    border-radius: 45px;
+    padding: 8px;
+    font-size: 14px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.leftside button:hover{
+    background: #0252ca;
+}
+.right_side{
+    flex-basis: 39%;
+    padding: 20px 40px;
+    box-shadow: -3px 3px 5px  5px rgba(220, 220, 226, 0.747);
+}
+.right_side button{
+    border-radius: 45px;
+    padding: 8px;
+    font-size: 14px;
+    background: #0D6EFD;
+    color: white;
+    font-weight: 700;
+    margin-top: 60px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.right_side button:hover{
+    background: #0252ca;
+}
